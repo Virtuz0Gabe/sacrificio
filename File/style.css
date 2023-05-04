@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+body{
+
+    background-color: #353535;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 8px;
+    column-gap: 24px;
+
+    border-bottom: 2px solid #372099;
+    padding: 8px 24px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header li + li {
+    margin-left: 24px;
+}
+
+header a{
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #000000;
+}
+header a:hover{
+    color: #4b389e;
+    letter-spacing: 1px;
+}
+
+
+
+header img{
+    width: 80px;
+    mix-blend-mode: color-burn;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal{
+    border-radius: 5px;
+    margin: 30px 10px;
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(90.15deg, #570368 16.62%, #372099 85.61%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    padding: 32px 24px;
+    border-top: 2px solid #372099;
+    text-align: center;
+    
+}
+
+footer p {
+    color: aliceblue;
+}
+
+footer a{
+    color: aliceblue;
+    transition: all 0.3s;
+}
+
+footer a:hover{
+    color: rgb(170, 129, 246);
+}
+
+
+input{
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+#botao{
+    transition: all 0.2s;
+    border: none;
+}
+
+#botao:hover{
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #1f0d6e;
+    color: aliceblue;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de CEP JOIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/cep.svg" alt="">
+
+        <nav>
+            <ul>
+                <li><a href="https://viacep.com.br" target="_blank">Documentação</a></li>
+                <li><a href="https://viacep.com.br/ws/01001000/json/" target="_blank" >Exemplo</a></li>
+            </ul>
+        </nav>
+        
+
+
+    </header>
+    
+
+    <section class="Container">
+
+        <div class="principal">
+            <form action="API.php" method="POST">  
+                <!-- type="number" define que só podem ser digitados números no campo
+                pattern="" -->
+                <input id="CEP" type="number" pattern="[0-9]*" maxlength="8" placeholder="Digite um CEP" name="CEP" required>             
+                <input id="botao" type="submit" value="Buscar" name="Enviar"> 
+            </form>
+
+            <div id="resposta" class="resposta"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Desenvolvido com um restinho de 💜 por 
+            <a href="https://www.instagram.com/_virtuz_/" target="_blank" title="Link externo">Gabriel Werner kuhn - Vírtuz</a>
+        </p>
+    </footer>
+
+    <script src="javinha.js"></script>
+
+</body>
+</html>
